@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/scripts.js"></script>-->
+
+<script>
+
+$("document").ready(function(){
+    
+    $("#fadeIn").on("click", function(){
+        $("#box").fadeIn(4000, function(){
+           alert("I'm done") 
+        });
+    });
+    
+     $("#fadeOut").on("click", function(){
+        $("#box").fadeOut("fast", function(){
+            alert("Fade out")
+        });
+    });
+});
+    
+
+
+</script> 
+
+<style>
+    #box{
+        display: none;
+    }    
+    
+</style>
+
+</head>
+
+<body>
+    
+    <a id="fadeIn" href="#">Click to show </a><br><br>
+    <a id="fadeOut" href="#">Click to hide </a>
+        
+    <div id="box">
+    
+       <p>
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, commodi. Soluta, officia. Molestias, mollitia. Unde deleniti dicta praesentium facere eveniet suscipit, quo vel totam laboriosam tempora aut ullam voluptatibus esse!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, commodi. Soluta, officia. Molestias, mollitia. Unde deleniti dicta praesentium facere eveniet suscipit, quo vel totam laboriosam tempora aut ullam voluptatibus esse!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, commodi. Soluta, officia. Molestias, mollitia. Unde deleniti dicta praesentium facere eveniet suscipit, quo vel totam laboriosam tempora aut ullam voluptatibus esse!
+       </p>
+        
+    </div>
+    
+    
+    
+</body>
+<!--</html>-->
