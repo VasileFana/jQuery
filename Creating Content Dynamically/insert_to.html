@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/scripts.js"></script>-->
+
+<script>
+
+$("document").ready(function(){
+    
+    $("#appendTo").click(function(){
+        $("#box p:first").appendTo("#box p:last");
+    });
+    
+    $("#prependTo").click(function(){
+        $("#box p:last").prependTo("#box p:first");
+    });
+    
+    $("#prependBefore").click(function(){
+        $("#box p").before("**");
+    });
+
+    $("#prependAfter").click(function(){
+        $("<p>New paragraph</p>").insertAfter("#box p:last");
+    });
+
+
+
+});
+    
+
+
+</script>
+
+</head>
+
+<body>
+    
+    <a href="#" id="appendTo">Append</a>
+    <a href="#" id="prependTo">Prepend</a>
+    <a href="#" id="prependBefore">prependBefore</a>
+    <a href="#" id="prependAfter">prependAfter</a>
+    
+   <div id="box">
+       
+       <p>This is the first</p>
+       <p>This is the the second</p>
+       <p>This is the third</p>
+       <p>This is the fourth</p>
+       <p>This is the fifth</p>
+       
+       
+       
+   </div> 
+    
+    
+</body>
+<!--</html>-->

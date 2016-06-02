@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/scripts.js"></script>-->
+
+<script>
+
+$("document").ready(function(){
+//    $("#box p:first").next().css("color","red");
+//     $("#box p:last").prev().css("color","red");
+     $("#box").parents().addClass('color').css("border"," 1px solid red");
+
+});
+    
+
+
+</script>
+
+<style>
+    .color{
+        color: blue;
+    }    
+    
+    
+</style>
+</head>
+
+<body>
+    
+    <div id="box">
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ipsa consectetur, iure deserunt ad incidunt adipisci debitis perferendis earum quisquam architecto dolorem illo quaerat ab odit dolor beatae doloribus praesentium!</p>
+        
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ipsa consectetur, iure deserunt ad incidunt adipisci debitis perferendis earum quisquam architecto dolorem illo quaerat ab odit dolor beatae doloribus praesentium!</p>
+        
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ipsa consectetur, iure deserunt ad incidunt adipisci debitis perferendis earum quisquam architecto dolorem illo quaerat ab odit dolor beatae doloribus praesentium!</p>
+        
+        
+    </div>
+    
+    
+    
+</body>
+<!--</html>-->

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/scripts.js"></script>-->
+
+<script>
+
+$("document").ready(function(){
+    
+    $("#create").click(function(){
+        $("#container p:first").html("<p>Replaced and createtd this text</p>");
+    });
+    
+    $("#create_text").click(function(){
+        $("#container p:last").text("<p>Replaced and createtd this text</p>");
+    });
+    
+    $("#create_variable").click(function(){
+        
+        var newText = $('#container p:first');
+        
+        $("#container p:last").html(newText);
+    });
+
+});
+    
+
+
+</script>
+
+</head>
+
+<body>
+    
+    <a href="#" id="create">Create</a>
+    <a href="#" id="create_text">Create text</a>
+    <a href="#" id="create_variable">Create Text_var</a>
+    
+    <div id="container">
+        <p>1-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci perspiciatis aliquid vitae necessitatibus aperiam reiciendis est saepe officiis aliquam, consectetur, eveniet deleniti quaerat. Reiciendis dolorum consequatur quidem, minus harum repellat!</p>
+        
+        <p>2-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe veritatis, eius odit eveniet temporibus blanditiis quibusdam ab debitis non, iusto explicabo iste vero repellat quos praesentium. Sapiente voluptatem, quis enim?</p>
+        
+        <p>3-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore delectus cum, ea quas eos doloremque fugiat. Beatae recusandae harum, voluptates nam impedit minima earum, expedita alias commodi ratione sapiente, inventore.</p>
+    </div>
+    
+</body>
+<!--</html>-->

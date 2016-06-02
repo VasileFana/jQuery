@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery.js"></script>
+<!--    <script src="js/scripts.js"></script>-->
+
+<script>
+
+$("document").ready(function(){
+    
+    $("#add-class").click(function(){
+        $("p:first").addClass('color');
+    });
+    
+     $("#remove-class").click(function(){
+        $("p:first").removeClass('color');
+    });
+    
+    $("#toggle-class").click(function(){
+        $("p").toggleClass('line');
+    });
+    
+       $("#increase-size").click(function(){
+        $("p").css("font-size","+=1px");
+    });
+    
+    
+    
+
+});
+    
+
+
+</script>
+
+<style>
+    .color {
+        color: red;
+    } 
+    .line {
+        text-decoration: underline;
+    }
+    
+</style>
+
+
+</head>
+
+<body>
+   
+   <a href="#" id="add-class">Add Class</a>
+   <a href="#" id="remove-class">Remove Class</a>
+   <a href="#" id="toggle-class">Toggle Class</a>
+   <a href="#" id="increase-size">Increase Size</a>
+   
+   
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti omnis, alias quos. Soluta veniam odio doloremque, facere fugit debitis? Omnis, doloremque laborum quidem eos mollitia aut laudantium voluptatibus a provident!</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis praesentium fugiat saepe debitis mollitia iusto nulla, dolorem repellat reprehenderit repellendus, distinctio, dignissimos nemo vero officiis optio aperiam. Totam, fuga.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia doloribus eligendi molestiae laudantium architecto reiciendis similique, facilis veritatis saepe eveniet, quis tempore accusantium repellendus unde provident aliquam quas est! Nemo!</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, officiis odit voluptatibus voluptate sequi. Fugiat consectetur ipsum unde quidem nihil, obcaecati dolor hic quibusdam doloribus? Quo, iure. Repudiandae deleniti, minus.</p>
+    
+    
+</body>
+<!--</html>-->
